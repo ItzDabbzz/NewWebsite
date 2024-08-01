@@ -1,0 +1,146 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | ItzDabbzz" description="About ItzDabbzz">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About"
+				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+			>
+				<img
+					width="1553"
+					height="713"
+					src="/assets/nowloading.gif"
+					alt="Now Loading Gif"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<p>
+						I was born in Colorado, where I lived for 4 years until I moved to Texas. I was then raised in texas most my life. 
+						I was raised in the country, near rivers and lakes. I spent most my childhood outside playin in mud, hiking, fishing, riding bmx bikes and dirtbikes. 
+						I was lucky enough to be raised arond exotic animals including but not limited to giraffes, camels, llamas, horses, watuse, axis, macaws, zebras, buffalo, albino buffalo and kangaroos
+						
+					</p><br/>
+					<p>
+						I've had many animals in my past years that sadly arnt here anymore, but I am currently a cat dad. His name is Trunks and hes a Siameese and Pursian
+						<img
+							width="900"
+							height="413"
+							src="/assets/trunks.jpg"
+							alt="ItzDabbzz's Cat Trunks, who is a Siameese and Pursian mix"
+						/>
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Languages & Tools</h2>
+				<div class="content">
+					<ul>
+						<li>JavaScript</li>
+						<li>Typescript</li>
+						<li>Go</li>
+						<li>Lua</li>
+						<li>C#</li>
+						<li>Java</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>pnPm</li>
+						<li>Bun.sh</li>
+						<li>NeoVim</li>
+						<li>Zoxide</li>
+						<li>Obsidian</li>
+						<li>Fork Git Client</li>
+						<li><a href="https://www.mongodb.com">MongoDB</a></li>
+						<li><a href="https://astro.build/">Astro</a></li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<ul>
+						<li><a>REST</a></li>
+						<li><a>SQL</a></li>
+						<li><a>NoSQL</a></li>
+						<li><a>Logging</a></li>
+						<li><a>Git</a></li>
+						<li><a>Linux</a></li>
+						<li><a>Windows</a></li>
+						<li><a>Windows Server</a></li>
+						<li><a>Proxmox VMs</a></li>
+						<li><a>Docker</a></li>
+						<li><a>Docker Compose</a></li>
+					</ul>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>

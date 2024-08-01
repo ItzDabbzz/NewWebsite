@@ -1,0 +1,140 @@
+---
+import { getCollection } from "astro:content";
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import ContactCTA from "../components/ContactCTA.astro";
+import PortfolioPreview from "../components/PortfolioPreview.astro";
+import Hero from "../components/Hero.astro";
+import Grid from "../components/Grid.astro";
+
+const projects = (await getCollection("work")).sort(
+	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
+);
+---
+
+<BaseLayout
+	title="My Work | ItzDabbzz"
+	description="Reasons To Live"
+>
+	<div class="stack gap-20">
+		<main class="wrapper stack gap-8">
+			<Hero
+				title="Reasons To Live"
+				tagline="100 Reasons To Live"
+				align="start"
+			/>
+			<p>
+				1. We would miss you. <br /><br /> 2. It&apos;s not worth the regret.
+				Either by yourself if you failed or just simply left scars, or the
+				regret everyone else feels by not doing enough to help you. <br
+				/><br /> 3. It does get better. Believe it or not it will eventually
+				get better. Sometimes you have to go through the storm to get to
+				the rainbow. <br /><br /> 4. There&apos;s so much you would miss
+				out on doing. <br /><br /> 5. There is always a reason to live. It
+				might not be clear right now, but it is always there. <br /><br
+				/> 6. So many people care, and it would hurt them if you hurt yourself.
+				<br /><br /> 7. You ARE worth it. Don&apos;t let anyone, especially
+				yourself, tell you otherwise. <br /><br /> 8. You are amazing. <br
+				/><br /> 9. A time will come, once you&apos;ve battled the toughest
+				times of your life and are in ease once again, where you will be
+				so glad that you decided to keep on living. You will emerge stronger
+				from this all, and won&apos;t regret your choice to carry on with
+				life. Because things always get better. <br /><br /> 10. What about
+				all the things you&apos;ve always wanted to do? What about the things
+				you&apos;ve planned, but never got around to doing? You can&apos;t
+				do them when you&apos;re dead. <br /><br /> 11. I love you. Even
+				if only one person loves you, that&apos;s still a reason to stay
+				alive. <br /><br /> 12. You won&apos;t be able to listen to music
+				if you die. <br /><br /> 13. Killing yourself is never worth it.
+				You&apos;ll hurt both yourself and all the people you care about.
+				<br /><br /> 14. There are so many people that would miss you, including
+				me. <br /><br /> 15. You&apos;re preventing a future generation,
+				YOUR KIDS, from even being born. <br /><br /> 16. How do you think
+				your family would feel? Would it improve their lives if you died?
+				<br /><br /> 17. You&apos;re gorgeous, amazing, and to someone you
+				are perfect. <br /><br /> 18. Think about your favourite music artist,
+				you&apos;ll never hear their voice again... <br /><br /> 19. You&apos;ll
+				never have the feeling of walking into a warm building on a cold
+				day <br /><br /> 20. Listening to incredibly loud music <br
+				/><br /> 21. Being alive is just really good. <br /><br /> 22. Not
+				being alive is really bad. <br /><br /> 23. Finding your soulmate.
+				<br /><br /> 24. Red pandas <br /><br /> 25. Going to diners at three
+				in the morning. <br /><br /> 26. Really soft pillows. <br /><br
+				/> 27. Eating pizza in New York City. <br /><br /> 28. Proving people
+				wrong with your success. <br /><br /> 29. Watching the jerks that
+				doubted you fail at life. <br /><br /> 30. Seeing someone trip over
+				a garbage can. <br /><br /> 31. Being able to help other people.
+				<br /><br /> 32. Bonfires. <br /><br /> 33. Sitting on rooftops.
+				<br /><br /> 34. Seeing every single country in the world.
+				<br /><br /> 35. Going on road trips. <br /><br /> 36. You might
+				win the lottery someday. <br /><br /> 37. Listening to music on a
+				record player. <br /><br /> 38. Going to the top of the Eiffel Tower.
+				<br /><br /> 39. Taking really cool pictures. <br /><br /> 40. Literally
+				meeting thousands of new people. <br /><br /> 41. Hearing crazy stories.
+				<br /><br /> 42. Telling crazy stories. <br /><br /> 43. Eating ice
+				cream on a hot day. <br /><br /> 44. Talking bad about people that
+				deserve it to your best friend and ranting all day <br /><br /> 45.
+				Travelling to another planet someday. <br /><br /> 46. Having an
+				underwater house. <br /><br /> 47. Randomly running into your hero
+				on the street. <br /><br /> 48. Having your own room at a fancy hotel.
+				<br /><br /> 49. Trampolines.
+				<br /><br /> 50. Think about your favorite movie, you&apos;ll never
+				watch it again. <br /><br /> 51. Think about the feeling of laughing
+				out loud in a public place because your best friend has just sent
+				you an inside joke, <br /><br /> 52. Your survival will make the
+				world better, even if it&apos;s for just one person or 20 or 100
+				or more. <br /><br /> 53. People do care. <br /><br /> 54. Treehouses
+				<br /><br /> 55. Hanging out with your soul mate in a treehouse <br
+				/><br /> 55. Snorting when you laugh and not caring who sees <br
+				/><br /> 56. I don&apos;t even know you and I love you. <br
+				/><br /> 57. I don&apos;t even know you and I care about you. <br
+				/><br /> 58. Because nobody is going to be like you ever, so embrace
+				your uniqueness! <br /><br /> 59. You won&apos;t be here to experience
+				the first cat world emperor. <br /><br /> 60. WHAT ABOUT FOOD?! YOU&apos;LL
+				MISS TACOS AND ALL THE OTHER NOM THINGS! <br /><br /> 61. Starbucks.
+				<br /><br /> 62. Hugs. <br /><br /> 63. Stargazing. <br /><br />
+				64. You have a purpose, and it&apos;s up to you to find out what
+				it is. <br /><br /> 65. You&apos;ve changed somebody&apos;s life.
+				<br /><br /> 66. Now you could change the world. <br /><br /> 67.
+				You will meet the person that&apos;s perfect for you. <br /><br
+				/> 68. No matter how much or how little, you have your life ahead
+				of you. <br /><br /> 69. You have the chance to save somebody&apos;s
+				life. <br /><br /> 70. If you end your life, you&apos;re stopping
+				yourself from achieving great things. <br /><br /> 71. Making snow
+				angels. <br /><br /> 72. Making snowmen. <br /><br /> 73. Snowball
+				fights. <br /><br /> 74. Life is what you make of it. <br /><br
+				/> 75. Everybody has a talent. <br /><br /> 76. Laughing until you
+				cry. <br /><br /> 77. Having the ability to be sad means you have
+				the ability to be happy. <br /><br /> 78. The world would not be
+				the same if you didn&apos;t exist. <br /><br /> 79. Its possible
+				to turn frowns, upside down <br /><br /> 80. Be yourself, don&apos;t
+				take anyone&apos;s shit, and never let them take you alive. <br
+				/><br /> 81. Heroes are ordinary people who make themselves extraordinary.
+				Be your own hero. <br /><br /> 82. Being happy doesn&apos;t mean
+				that everything is perfect. It means that you&apos;ve decided to
+				look beyond the imperfections.
+				<br /><br /> 83. One day your smile will be real. <br /><br /> 84.
+				Having a really hot, relaxing bath after a stressful day. <br
+				/><br /> 85. Lying on grass and laughing at the clouds. <br
+				/><br /> 86. Getting completely smashed with your best friends. <br
+				/><br /> 87. Eating crazy food. <br /><br /> 88. Staying up all night
+				watching your favorite films with a loved one. <br /><br /> 89. Sleeping
+				in all day. <br /><br /> 90. Creating something you&apos;re proud
+				of. <br /><br /> 91. You can look back on yourself 70 years later
+				and being proud you didn&apos;t commit <br /><br /> 92. Being able
+				to meet your Internet friends. <br /><br /> 93. Tea / Coffee / Hot
+				Chocolate <br /><br /> 94. The new season of Sherlock<br /><br
+				/> 95. Cuddling under the stars. <br /><br /> 96. Being stupid in
+				public because you just can. <br /><br /> 97. If you are reading
+				this then you are alive! Is there any more reason to smile? <br
+				/><br /> 98. being able to hug that one person you havent seen in
+				years <br /><br /> 99. People care enough about you and your future
+				to come up with 100 reasons for you not to do this. <br /><br />
+				100. But, the final and most important one is, just, being able to
+				experience life. Because even if your life doesn&apos;t seem so great
+				right now, literally anything could happen
+			</p>
+		</main>
+	</div>
+</BaseLayout>

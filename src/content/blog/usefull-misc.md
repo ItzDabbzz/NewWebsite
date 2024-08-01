@@ -1,0 +1,83 @@
+---
+title: Useful Misc
+publishDate: 2020-03-02 00:00:00
+img: /assets/tools.png
+img_alt: Best Tools I've Found
+description: |
+  A list of random useful things
+tags:
+  - Coding
+  - List
+  - Useful
+---
+
+## Important QOL
+- https://getsharex.com
+- https://github.com/awesome-foss/awesome-sysadmin
+- https://github.com/awesome-selfhosted/awesome-selfhosted
+- https://github.com/karanpratapsingh/system-design
+
+## Got Ads/Bloatware?
+- https://www.bleepingcomputer.com/download/adwcleaner/
+
+## Think you have a virus?
+- https://www.bleepingcomputer.com/download/rkill/
+- https://www.bleepingcomputer.com/download/tcpview/
+- https://www.malwarebytes.com/mwb-download
+- https://www.avg.com/en-au/remove-win32-neshta
+
+## Wanna Mess With Any Windows File?
+- https://www.bleepingcomputer.com/download/givemepower/
+
+## PC Spec Viewer
+- https://www.hwinfo.com
+- https://www.bleepingcomputer.com/download/speccy/
+- https://www.bleepingcomputer.com/download/hardware-identify/
+- https://www.techpowerup.com/download/aida64-extreme/
+
+## Handle Auto Runs For Windows
+- https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns
+
+## Great program to manage disc space
+- WizTree: https://diskanalyzer.com/download
+    - Faster Than WinDirStat [Refrence](https://diskanalyzer.com/wiztree-vs-windirstat)
+- WinDirStat: https://www.bleepingcomputer.com/download/windirstat/
+
+## Bunch of random tools
+- https://www.bleepingcomputer.com/download/tweakingcom-technicians-toolbox/
+- https://winmerge.org/?lang=en
+
+## Install Nvidia Drivers Without Bloat
+- https://www.techpowerup.com/download/techpowerup-nvcleanstall/
+
+## Active Windows #WeAlwaysBroke
+- **Windows 11:**  https://www.blowingideas.com/windows-11-product-keys/#Windows_11_Serial_Keys
+- **KMS Server:** https://gist.github.com/jerodg/502bd80a715347662e79af526c98f187#office-kms-setup
+
+## Windows Shortcuts
+- **11:** https://www.xda-developers.com/windows-11-keyboard-shortcuts/
+- **10:** https://www.windowscentral.com/best-windows-10-keyboard-shortcuts
+
+## Trace Windows Events And Network Traffic
+- https://hakin9.org/winshark-wireshark-plugin-to-work-with-event-tracing-for-windows/
+
+## Wanna Learn Cyber Security?
+- https://hakin9.org/category/news/
+
+## Dev Shiz
+- https://code.visualstudio.com/download
+- https://git-fork.com
+- https://notepad-plus-plus.org/downloads/
+- https://github.com/M2Team/NanaZip
+
+## Node.JS Shiz
+- https://github.com/coreybutler/nvm-windows
+- https://nodejs.libhunt.com
+- https://github.com/goldbergyoni/nodebestpractices
+- https://github.com/sorrycc/awesome-javascript
+- https://github.com/ryanmcdermott/clean-code-javascript
+- https://github.com/trekhleb/javascript-algorithms
+- https://github.com/micromata/awesome-javascript-learning
+- https://github.com/Asabeneh/30-Days-Of-JavaScript
+- https://github.com/leonardomso/33-js-concepts
+- https://github.com/humanwhocodes/computer-science-in-javascript
