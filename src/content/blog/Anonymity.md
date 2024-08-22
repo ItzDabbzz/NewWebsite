@@ -8,6 +8,7 @@ description: |
 tags:
   - Guide
   - Blog
+showToc: true
 ---
 ### A Complete Guide
 `In this digital age, privacy and online security have become paramount concerns, Maintaining anonymity online is crucial for safeguarding personal data, protecting against identity theft, and preserving your freedom of expression. Here I will try and cover a wide range of strategies, tools, and best practices to help you maximize your online privacy`

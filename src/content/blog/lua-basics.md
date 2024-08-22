@@ -10,6 +10,7 @@ tags:
   - Blog
   - Lua
   - Coding
+showToc: true
 ---
 
 ## Lua Basics

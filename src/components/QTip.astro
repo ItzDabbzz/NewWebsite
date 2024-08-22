@@ -1,0 +1,153 @@
+---
+import Icon from "./Icon.astro";
+import { iconPaths } from "./IconPaths";
+/// Types of tips
+/// Note
+/// Info
+/// Tip
+/// Caution / Danger
+/// Warning
+export interface Props {
+    type: string;
+    title: string;
+    content: string;
+}
+const { type, title, content } = Astro.props as Props;
+
+const className = `asideQ_main ${type}`;
+---
+
+<div aria-label="QTip" class={className}>
+    <h4 class={`asideQ-title ${className}`}><Icon icon=`${type as keyof typeof iconPaths}` size="1.45em"/> {title}</h4>
+    <section class={`asideQ_content_wrapper ${className}`}>
+        <p class="asideQ-content">{content}</p>
+    </section>
+</div>
+
+<style>
+    .asideQ_main {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        border-width: 0;
+        border-left: 0.40rem;
+        border-style: solid;
+        border-radius: 15px;
+        padding: 0.25rem;
+        /* background-color: #44455107; */
+    }
+    .asideQ-title {
+        border-style: none;
+        margin-top: 0;
+        margin-bottom: 0.25rem;
+        color: #cdd6f4;
+    }
+    .asideQ_content_wrapper {
+        margin-top: 0;
+        border-style: none;
+    }
+    .asideQ-content {
+        margin-bottom: 0.5rem;
+        padding-left: 15px;
+        color: #a6adc8;
+    }
+
+    .icon :global(svg) {
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+    }
+    .icon {
+        font-size: large;
+        margin-top: 0;
+    }
+
+    /* Info */
+    .info {
+        background-color: #444551;
+        border-color: #89b4fa;
+    }
+    .icon.info :global(svg) {
+        fill: #a6adc8;
+    }
+    .icon.info {
+        color: #a6adc8;
+    }
+    .asideQ-title.info {
+        color: #a6adc8;
+    }
+
+    /* Note */
+    .note {
+        background-color: #585b70;
+        border-color: #f2cdcd;
+    }
+    .icon.note :global(svg) {
+        fill: #f2cdcd;
+    }
+    .icon.note {
+        color: #f2cdcd;
+    }
+    .asideQ-title.note {
+        color: #f2cdcd;
+    }
+
+    /* Tip */
+    .tip {
+        background-color: #1e1e2e;
+        border-color: #a6e3a1;
+    }
+    .icon.tip :global(svg) {
+        fill: #a6e3a1;
+    }
+    .icon.tip {
+        color: #a6e3a1;
+    }
+    .asideQ-title.tip {
+        color: #a6e3a1;
+    }
+
+    /* Caution */
+    .caution {
+        background-color: #6c7086;
+        border-color: #fab387;
+    }
+    .icon.caution :global(svg) {
+        fill: #f9e2af;
+    }
+    .icon.caution {
+        color: #f9e2af;
+    }
+    .asideQ-title.caution {
+        color: #f9e2af;
+    }
+
+    /* Warning */
+    .warning {
+        background-color: #313244;
+        border-color: #f9e2af;
+    }
+    .icon.warning :global(svg) {
+        fill: #f9e2af;
+    }
+    .icon.warning {
+        color: #f9e2af;
+    }
+    .asideQ-title.warning {
+        color: #f9e2af;
+    }
+
+    /* Danger */
+    .danger {
+        background-color: #313244;
+        border-color: #f38ba8;
+    }
+    .icon.danger :global(svg) {
+        fill: #f38ba8;
+    }
+    .icon.danger {
+        color: #f38ba8;
+    }
+    .asideQ-title.danger {
+        color: #f38ba8;
+    }
+</style>

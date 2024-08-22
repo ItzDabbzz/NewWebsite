@@ -1,0 +1,176 @@
+---
+title: Useful Windows
+publishDate: 2024-08-02 00:00:00
+img: /assets/windows.jpg
+img_alt: Best Tools I've Found For Windows
+description: |
+  A list of random useful things for Windows
+tags:
+  - Coding
+  - List
+  - Useful
+  - Window
+  - Awesome
+showToc: true
+---
+import Tip from '../../components/Tip.astro'
+import QTip from '../../components/QTip.astro'
+
+
+{/* <QTip type="info" title="Test Info" content="Quick Info Tip"/>
+<QTip type="danger" title="Test Danger" content="Quick Danger Tip"/>
+<QTip type="tip" title="Test Tip" content="Quick Test Tip"/>
+<QTip type="caution" title="Test Caution" content="Quick Caution Tip"/>
+<QTip type="note" title="Test Note" content="Its a Quick Note Tip"/>
+<Tip type="note" title="Test Note">
+This is a note test with a very long subject line that i dont generally know what to deal with, its also a run on sentence fun fact which is a huge no no in english history. least i didnt make any spelling mistakes just grammer :) haha
+</Tip> */}
+
+# Removing Windows 11 Watermark
+- Access the Registry Editor by typing ‘Regedit’ in the Windows 11 search box and hitting OK to open it.
+- On the left side, open up HKEY_CURRENT_USER and scroll down to the Control Panel.
+- Find the entry called UnsupportedHardwareNotificationCache.
+- Right-click that entry and select ‘Modify’ from the menu.
+- Change the SV2 DWORD value from 1 to 0.
+- Save, exit, and then restart your PC.
+
+# Basic Optimization Tips
+
+## Turn Off VBS
+**Virtualization Based Security (VBS)** can slow apps (and games) down by **5** to **15%** in Windows 11 especially if you're on an AMD system.
+- Open System Information. Do this by searching for "system information" in Windows search and clicking the top result.
+- Scroll down to find the "Virtualization-based security" row. If it says "running," VBS is enabled. But if it says "not enabled," then you're done.
+
+## Disable VBS/HVCI in Windows 11
+- Search for Core Isolation in Windows search and click the top result.
+- Toggle Memory Integrity to off, if it was on.
+- Reboot your PC as prompted.
+- Check System Information again to see if virtualization-based security is listed as "not enabled."
+
+
+# Useful Programs
+## Basics Tools
+- [Process Lasso](https://bitsum.com/) - Real-Time CPU Optimization and Automation
+- [WinPaletter](https://github.com/Abdelrhman-AK/WinPaletter) - Colorize Windows 10/11 Without Restrictions
+- [SecureUxTheme](https://github.com/namazso/SecureUxTheme) - Secure Boot Compatible in-memory UxTheme Patcher
+- [WinToys](https://apps.microsoft.com/detail/9p8ltpgcbzxd?hl=en-us&gl=us) - General Nice Tools
+- [SysInternals Suite](https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite) - Microsoft SysInternals Tools
+- [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/) - Power User tools
+- [ExplorerPatcher](https://github.com/valinet/ExplorerPatcher) - Revert Windows 11 Explorer to 7 & 10 Style
+- [GlazeWM](https://github.com/glzr-io/glazewm?tab=readme-ov-file#installation) - Tiling Window Manager for Windows inspired by i3wm
+
+## Microsoft Office Replacements
+- [OnlyOffice](https://www.onlyoffice.com/) - Offline/Online Office Suite
+- [FreeOfice](https://www.freeoffice.com/en/) - Office Suite
+- [LibreOffice](https://www.libreoffice.org/) - Free & Open-Source Office Suite
+
+## Browsers
+- [FireFox](https://www.mozilla.org/en-US/firefox/) - 
+- [LibreWolf](https://librewolf.net/) - Custom Firefox, Focused on Privacy, Security, & Freedom
+- [Brabe](https://brave.com/) - 
+- [ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium-windows/releases) - Chromium W/O Google
+- [OperaGX](https://www.opera.com/gx) - Built in Ad-Blocker
+
+### Browser Addons
+- [UBlock Origin](https://ublockorigin.com/) - Open-Source Content Filtering Software
+- [Privacy Badger](https://privacybadger.org/) - Tracker Detection
+- [DuckDuckGo Privacy Essentials](https://duckduckgo.com/app) - Helps you prevent your personal information from being exposed
+- [Ghostery](https://www.ghostery.com/ghostery-ad-blocker) - Comprehensive Privacy Protection & AdBlock
+- [HTTPS Everywhere](https://www.eff.org/https-everywhere) - Make sure wbesites are forced secure
+- [CleanURLs](https://gitlab.com/ClearURLs/ClearUrls) - Clean Tracking Links
+    - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/clearurls/)
+    - [Chrome](https://chromewebstore.google.com/detail/clearurls/lckanjgmijmafbedllaakclkaicjfmnk)
+- [PixelBlock](https://chromewebstore.google.com/detail/pixelblock/jmpmfcjnflbcoidlgapblgpgbilinlem) - (Chrome Only) Blocks Email Tracking Attemps for Gmail
+- [BitWarden](https://bitwarden.com/) - Open Source Password Manager
+- [1Password](https://1password.com/) - Password Manager
+
+## Search Engines
+- [Brave Search](https://search.brave.com/) - 
+- [Ghostery Search](https://ghosterysearch.com/) - 
+- [DuckDuckGO](https://duckduckgo.com/) - 
+- [StartPage](https://www.startpage.com/) - 
+- [Qwant](https://www.qwant.com/) - 
+- [Ecosia](https://www.ecosia.org/) - 
+- [SwissCows](https://swisscows.com/en) - 
+- [Mojeek](https://www.mojeek.com/) - 
+
+## Security
+- [Configure Defender](https://github.com/AndyFul/ConfigureDefender) - GUI To Cofngiure Defender
+- [RKill](https://www.bleepingcomputer.com/download/rkill/) - Terminate Known Maleware Processes
+
+## VPN
+- [Tailscale](https://tailscale.com/) - is the easiest, most secure way to use WireGuard and 2FA. Tailscale helps you manage and access private or shared resources from anywhere in the world.
+- [OpenVPN](https://openvpn.net/) - Uses a custom security protocol that utilizes SSL/TLS for key exchange.
+- [Pritunl](https://pritunl.com/) - OpenVPN based solution that's easy to set up.
+- []() - 
+
+## Video
+- [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - Professional video creation software editing
+- [HandBrake](https://handbrake.fr/) - High Preformance video encoding & conversion tool
+- [Open Broadcasting Software](https://obsproject.com/) - Free and open source software for video recording and live streaming.
+- [VLC](https://obsproject.com/) - Open Source multimedia player
+
+## Chats
+- [Discord](https://discordapp.com/)
+- [Telegram](https://desktop.telegram.org/)
+
+## Compression
+- [7-Zip](https://www.7-zip.org/)
+- [WinRar](https://www.rarlab.com/) - The Classic
+- [NanaZip](https://github.com/M2Team/NanaZip) - 7-Zip derivative intended for the modern Windows experience
+
+
+## Drivers
+- [Snappy Driver Installer(SDI)](https://www.snappy-driver-installer.org/) - Portable Windows Tool for Device Drivers
+- [Display Drivers Uninstaller(DDU)](https://www.guru3d.com/download/display-driver-uninstaller-download) - Display Graphics Driver Removal Tool
+    - Use in Normal Mode, but Safe Mode is best for stability. 
+
+## Audio
+- [Audacity](https://www.audacityteam.org/) - 
+- [EarTrumpet](https://eartrumpet.app/) - Powerful Volume Control app For 10/11
+
+## Customization
+- [RainMeter](https://www.rainmeter.net/) - Allows Desktop Skins W/ Audio Visualizers
+- [WindowsCustomization](https://windowscustomization.com/) - A giant list of windows customization
+
+## Developer Tools
+- [DB Browser for SQLite](https://sqlitebrowser.org/) - Open Source tool to create, defaultSettings, and edit db files
+- [Fork](https://git-fork.com/) - A fast & friendly Git client for Windows
+- [HeidiSQL](https://www.heidisql.com/) - Powerful and easy client for MySQL, MaraiDB, PostgreSQL
+- [Insomina](https://insomnia.rest/) - Modern REST client
+- [Process Explorer](https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer) -  Nice Task Manager
+- [Process Monitor](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon) - Sys Insternals tool shows real time file system, registry, and more
+- [Process Hacker](https://processhacker.sourceforge.io/) - alternative task manager
+- [Wireshark](https://www.wireshark.org/) - Network Protocol Analyzer
+- [Neovim](https://neovim.io/)
+- [VSCode](https://code.visualstudio.com/)
+- [IntelliJ Idea](https://www.jetbrains.com/idea/)
+- [Mega](https://mega.nz/)
+- [AutoHotKey](https://autohotkey.com/)
+- [Chocolatey](https://chocolatey.org/)
+- [Scoop](https://github.com/ScoopInstaller/Scoop)
+- [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?hl=en-us&gl=US)
+- [CPUZ](https://www.cpuid.com/softwares/cpu-z.html)
+- [GPUZ](https://www.techpowerup.com/gpuz/)
+- [HWMonitor](https://www.cpuid.com/softwares/hwmonitor.html)
+- [Link Shell Ext](https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html) - Create HardLinks in Windows
+- [Rufus](https://rufus.ie/en/)
+- [ShareX](https://getsharex.com/) - Musthave Screen capture & file sharing tool
+- [Speccy](https://www.ccleaner.com/speccy)
+- [Glasswire](https://www.glasswire.com/)
+- [Bitdefender](https://www.bitdefender.com/)
+
+
+## Notable Awesome Lists
+- [awesome-os](https://github.com/zriyansh/awesome-os)
+- [awesome-windows](https://github.com/Awesome-Windows/Awesome)
+- [awesome-windows](https://github.com/quark-bar/awesome-windows)
+- [awesome-advanced-exploits](https://github.com/yeyintminthuhtut/Awesome-Advanced-Windows-Exploitation-References)
+- [awesome-domain-hardening](https://github.com/PaulSec/awesome-windows-domain-hardening)
+- [awesome-hack-with-windows](https://github.com/Hack-with-Github/Windows)
+- [awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted)
+- [awesome-sysadmin](https://github.com/awesome-foss/awesome-sysadmin)
+- [awesome-systools](https://github.com/Spacial/awesome-systools)
+- [awesome-privacy](https://github.com/Lissy93/awesome-privacy)
+- [personal-security-checklist](https://github.com/Lissy93/personal-security-checklist)
+- [Win-11-Tools](https://github.com/mikeroyal/Windows-11-Guide)

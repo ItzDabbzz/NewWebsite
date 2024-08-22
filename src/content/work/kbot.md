@@ -37,4 +37,4 @@ tags:
  - Discord.Net 2.3.0
  - Microsoft.EntityFrameworkCore 3.1.1
  - Npgsql.EntityFrameworkCore.PostgreSQL 3.0.1
- - Microsoft.Extensions.DependencyInjection
+ - Microsoft.Extensions.DependencyInjection 

@@ -1,0 +1,77 @@
+---
+title: Windows Command Line Things
+publishDate: 2024-02-02 00:00:00
+img: /assets/windows.jpg
+img_alt: Useful Command Line Tips
+description: |
+  A list of command line tips i've found
+tags:
+  - Coding
+  - List
+  - Useful
+  - CMD
+  - Console
+showToc: true
+---
+import Tip from '../../components/Tip.astro'
+
+## Serial Number for RAM, Motherboard, HardDrive
+{/* <Tip type="warning" title="Warning">
+
+</Tip> */}
+
+```cmd
+wmic memorychip get serialnumber
+wmic diskdrive get serialnumber
+wmic baseboard get serialnumber
+wmic cdrom where drive='d:' get SerialNumber
+```
+
+## TimeZone Managment
+
+```cmd
+* Windows 7 *
+
+tzutil /s  "Time zone Identifier"
+
+* Here, Time zone Identifier could be Pacific Standard Time, Central America Standard Time. *
+
+* Get the current Time Zone. *
+
+tzutil /g
+
+* Get the list of Time Zones. *
+
+tzutil /l
+
+* In Windows XP *
+
+RunDLL32.exe shell32.dll,Control_RunDLL timedate.cpl,,/Z Central Standard Time
+```
+
+## Firewall Managment
+```cmd
+* For XP/Server 2003 *
+
+netsh firewall set opmode mode=ENABLE
+netsh firewall set opmode mode=DISABLE
+
+* For later versions *
+
+netsh advfirewall set currentprofile state on
+netsh advfirewall set  currentprofile state off
+
+netsh advfirewall set domainprofile state on
+netsh advfirewall set domainprofile state off
+
+netsh advfirewall set privateprofile state on
+netsh advfirewall set privateprofile state off
+
+netsh advfirewall set publicprofile state on
+netsh advfirewall set publicprofile state off
+
+netsh advfirewall set  allprofiles state on
+netsh advfirewall set  allprofiles state off
+
+* These above commands should be run from adminstrator command line. *
+```
